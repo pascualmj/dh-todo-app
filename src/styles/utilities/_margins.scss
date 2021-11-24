@@ -1,4 +1,4 @@
-@import "../settings/variables";
+@import '../settings/variables';
 
 @each $side in $sides {
   @for $i from 1 through 20 {

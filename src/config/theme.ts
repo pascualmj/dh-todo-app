@@ -1,17 +1,17 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from 'styled-components';
 
 export const lightTheme: DefaultTheme = {
-  name: "light",
+  name: 'light',
   colors: {
-    primaryWhite: "#fff",
-    primaryTomato: "tomato",
-  },
+    primaryWhite: '#fff',
+    primaryTomato: 'tomato'
+  }
 };
 
 export const darkTheme: DefaultTheme = {
-  name: "dark",
+  name: 'dark',
   colors: {
-    primaryWhite: "#fff",
-    primaryTomato: "#000",
-  },
+    primaryWhite: '#fff',
+    primaryTomato: '#000'
+  }
 };
