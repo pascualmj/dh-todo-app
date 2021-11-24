@@ -1,0 +1,9 @@
+@import "../settings/variables";
+
+@each $side in $sides {
+  @for $i from 1 through 20 {
+    .u-m#{str-slice($side, 1, 1)}-#{$i} {
+      margin-#{$side}: 1rem * $i;
+    }
+  }
+}
