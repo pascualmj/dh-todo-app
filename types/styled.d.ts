@@ -10,6 +10,8 @@ declare module "styled-components" {
       secondaryBeige: string;
       primaryTeal: string;
       primaryNavy: string;
+      primarySuccess: string;
+      primaryError: string;
     };
     toggleTheme?: () => void;
   }

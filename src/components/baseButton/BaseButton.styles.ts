@@ -6,7 +6,7 @@ export const BaseButtonStyles = {
   Button: styled.button<{ variant: TBaseButtonVariant }>`
     min-width: 12rem;
     height: 4rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
     border-radius: 0.8rem;
     color: ${({ theme }) => theme.colors.primaryWhite};
     background-color: ${({ theme, variant }) =>
