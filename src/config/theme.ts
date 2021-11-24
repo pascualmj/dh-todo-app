@@ -3,15 +3,21 @@ import { DefaultTheme } from 'styled-components';
 export const lightTheme: DefaultTheme = {
   name: 'light',
   colors: {
-    primaryWhite: '#fff',
-    primaryTomato: 'tomato'
+    primaryWhite: '#FFF',
+    primaryBeige: '#F0E9D2',
+    secondaryBeige: '#E6DDC4',
+    primaryTeal: '#678983',
+    primaryNavy: '#181D31'
   }
 };
 
 export const darkTheme: DefaultTheme = {
   name: 'dark',
   colors: {
-    primaryWhite: '#fff',
-    primaryTomato: '#000'
+    primaryWhite: '#FFF',
+    primaryBeige: '#F0E9D2',
+    secondaryBeige: '#E6DDC4',
+    primaryTeal: '#678983',
+    primaryNavy: '#181D31'
   }
 };

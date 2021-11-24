@@ -10,6 +10,7 @@ export const privateRoutes: IRoute<ExoticComponent>[] = [
     name: routesConstants.ROUTE_TODOS,
     path: routesConstants.APP_PATHS.Todos,
     component: Todos,
+    layout: 'default',
     exact: true,
     auth: true
   }

@@ -6,7 +6,10 @@ declare module "styled-components" {
     name: AppThemeType;
     colors: {
       primaryWhite: string;
-      primaryTomato: string;
+      primaryBeige: string;
+      secondaryBeige: string;
+      primaryTeal: string;
+      primaryNavy: string;
     };
     toggleTheme?: () => void;
   }
