@@ -1,16 +1,19 @@
 import React from 'react';
 
-import { ThemeProvider } from './contexts/theme/ThemeContext';
-import MainRouter from './router/MainRouter';
+import { StoreProvider } from 'store/StoreProvider';
+import { ThemeProvider } from 'contexts/theme/ThemeContext';
+import MainRouter from 'router/MainRouter';
 
 // Global Styles
-import './styles/main.scss';
+import 'styles/main.scss';
 
 const App = () => {
   return (
-    <ThemeProvider>
-      <MainRouter />
-    </ThemeProvider>
+    <StoreProvider>
+      <ThemeProvider>
+        <MainRouter />
+      </ThemeProvider>
+    </StoreProvider>
   );
 };
 
