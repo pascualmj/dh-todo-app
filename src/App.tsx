@@ -1,6 +1,7 @@
 import React from "react";
 
 import { ThemeProvider } from "./contexts/theme/ThemeContext";
+import MainRouter from "./router/MainRouter";
 
 // Global Styles
 import "./styles/main.scss";
@@ -8,7 +9,7 @@ import "./styles/main.scss";
 const App = () => {
   return (
     <ThemeProvider>
-      <h1>DH Todo App by Manuel Pascual</h1>
+      <MainRouter />
     </ThemeProvider>
   );
 };
