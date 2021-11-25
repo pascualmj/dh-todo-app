@@ -10,7 +10,8 @@ export const TodoList = () => {
 
   return (
     <S.Container>
-      <ToggleOrder />
+      {todosList.length === 0 && <S.EmptyStateText>You are clean today 🥳🎉</S.EmptyStateText>}
+      {todosList.length > 1 && <ToggleOrder />}
       {todosList.map(item => (
         <BaseTodoItem
           priority={item.priority}
