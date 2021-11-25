@@ -6,7 +6,7 @@ import { useTodosContainer } from 'pages/todos/Todos.container';
 import { TodoListStyles as S } from './TodoList.styles';
 
 export const TodoList = () => {
-  const { todosList } = useTodosContainer();
+  const { todosList, deleteTodo, toggleTodo } = useTodosContainer();
 
   return (
     <S.Container>
@@ -15,12 +15,8 @@ export const TodoList = () => {
         <BaseTodoItem
           priority={item.priority}
           title={item.title}
-          onDelete={() => {
-            console.log('delete item!');
-          }}
-          onToggle={() => {
-            console.log('toggle item!');
-          }}
+          onDelete={() => deleteTodo({ id: item.id })}
+          onToggle={() => toggleTodo({ id: item.id })}
           done={item.done}
           key={item.id}
         />
