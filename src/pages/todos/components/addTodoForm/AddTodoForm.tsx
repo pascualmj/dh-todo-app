@@ -5,10 +5,10 @@ import { AddTodoFormStyles as S } from './AddTodoForm.styles';
 import { useTodosContainer } from 'pages/todos/Todos.container';
 
 export const AddTodoForm = () => {
-  const { addTodoForm } = useTodosContainer();
+  const { addTodoForm, onSubmit } = useTodosContainer();
 
   return (
-    <S.Form onSubmit={addTodoForm.handleSubmit(data => console.log(data))}>
+    <S.Form onSubmit={addTodoForm.handleSubmit(onSubmit)}>
       <S.Input
         placeholder="Your task here..."
         {...addTodoForm.register('title', { required: true })}
