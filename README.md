@@ -14,6 +14,10 @@
 - Eslint & Prettier
 - Husky & Lint Staged
 
+## 🚀 Run this project
+
+After cloning this repository just open the terminal on the same app's directory and run `npm install && npm` 😀
+
 ## 👍 Feel free to use this boilerplate
 
 Fork or clone this repository and start working on your React project rightaway.
