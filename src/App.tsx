@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { ErrorBoundary } from 'services/errorBoundary/ErrorBoundary';
 import { StoreProvider } from 'store/StoreProvider';
 import { ThemeProvider } from 'contexts/theme/ThemeContext';
 import MainRouter from 'router/MainRouter';
@@ -9,11 +10,13 @@ import 'styles/main.scss';
 
 const App = () => {
   return (
-    <StoreProvider>
-      <ThemeProvider>
-        <MainRouter />
-      </ThemeProvider>
-    </StoreProvider>
+    <ErrorBoundary>
+      <StoreProvider>
+        <ThemeProvider>
+          <MainRouter />
+        </ThemeProvider>
+      </StoreProvider>
+    </ErrorBoundary>
   );
 };
 

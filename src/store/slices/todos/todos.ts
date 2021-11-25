@@ -1,7 +1,7 @@
 import { createSlice, createSelector, PayloadAction } from '@reduxjs/toolkit';
 
 import { ITodo } from 'app-types/models';
-import type { RootState } from '../../types/storeHooks.types';
+import type { RootState } from '../../types/store.types';
 import { getNewId } from 'services/idGen/idGen';
 
 const sliceName = 'todos';
@@ -56,6 +56,7 @@ export const { addTodo, removeTodo, toggleTodo, clearTodos, toggleOrder } = acti
 // Selectors
 const todosSelector = (state: RootState) => state.todos.list.todos;
 const orderedSelector = (state: RootState) => state.todos.list.ordered;
+
 export const memoizedTodos = createSelector(todosSelector, orderedSelector, (todos, ordered) => {
   if (ordered) return todos.slice().sort((a, b) => b.priority.localeCompare(a.priority));
 
