@@ -16,7 +16,7 @@
 
 ## 🚀 Run this project
 
-After cloning this repository just open the terminal on the same app's directory and run `npm install && npm` 😀
+After cloning this repository just open the terminal on the same app's directory and run `npm install && npm start` 😀
 
 ## 👍 Feel free to use this boilerplate
 
